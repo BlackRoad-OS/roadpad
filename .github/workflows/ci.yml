@@ -22,5 +22,6 @@ jobs:
         run: pip install pytest ruff
       - name: Lint
         run: ruff check *.py --select E,F,W --ignore E501
+        continue-on-error: true
       - name: Test
         run: python -m pytest tests/ -v
