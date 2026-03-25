@@ -1,81 +1,48 @@
-# RoadPad
+<!-- BlackRoad SEO Enhanced -->
 
-Terminal-native plain-text editor for BlackRoad OS.
+# roadpad
 
-## Startup Surface
+> Part of **[BlackRoad OS](https://blackroad.io)** — Sovereign Computing for Everyone
 
-RoadPad renders this fixed startup shell:
+[![BlackRoad OS](https://img.shields.io/badge/BlackRoad-OS-ff1d6c?style=for-the-badge)](https://blackroad.io)
+[![BlackRoad OS](https://img.shields.io/badge/Org-BlackRoad-OS-2979ff?style=for-the-badge)](https://github.com/BlackRoad-OS)
+[![License](https://img.shields.io/badge/License-Proprietary-f5a623?style=for-the-badge)](LICENSE)
 
-```text
-▗ ▗   ▖ ▖  RoadPad v0.1.0
-           Lucidia · BlackRoad OS
-  ▘▘ ▝▝    ~
+**roadpad** is part of the **BlackRoad OS** ecosystem — a sovereign, distributed operating system built on edge computing, local AI, and mesh networking by **BlackRoad OS, Inc.**
 
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
->  describe a task to get started
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-  ⏵⏵ accept edits on (shift+tab to cycle)                                                                                                                               editor mode
-```
+## About BlackRoad OS
 
-## Behavior
+BlackRoad OS is a sovereign computing platform that runs AI locally on your own hardware. No cloud dependencies. No API keys. No surveillance. Built by [BlackRoad OS, Inc.](https://github.com/BlackRoad-OS-Inc), a Delaware C-Corp founded in 2025.
 
-- The `>` line is the active input line.
-- Typing replaces the placeholder text.
-- `Enter` commits the input line into the plain-text editor buffer.
-- `Shift+Tab` cycles accept-edits mode labels (`on`, `review`, `off`).
-- No chat workflow, no assistant overlays, no token counters.
+### Key Features
+- **Local AI** — Run LLMs on Raspberry Pi, Hailo-8, and commodity hardware
+- **Mesh Networking** — WireGuard VPN, NATS pub/sub, peer-to-peer communication
+- **Edge Computing** — 52 TOPS of AI acceleration across a Pi fleet
+- **Self-Hosted Everything** — Git, DNS, storage, CI/CD, chat — all sovereign
+- **Zero Cloud Dependencies** — Your data stays on your hardware
 
-## File Support
+### The BlackRoad Ecosystem
+| Organization | Focus |
+|---|---|
+| [BlackRoad OS](https://github.com/BlackRoad-OS) | Core platform and applications |
+| [BlackRoad OS, Inc.](https://github.com/BlackRoad-OS-Inc) | Corporate and enterprise |
+| [BlackRoad AI](https://github.com/BlackRoad-AI) | Artificial intelligence and ML |
+| [BlackRoad Hardware](https://github.com/BlackRoad-Hardware) | Edge hardware and IoT |
+| [BlackRoad Security](https://github.com/BlackRoad-Security) | Cybersecurity and auditing |
+| [BlackRoad Quantum](https://github.com/BlackRoad-Quantum) | Quantum computing research |
+| [BlackRoad Agents](https://github.com/BlackRoad-Agents) | Autonomous AI agents |
+| [BlackRoad Network](https://github.com/BlackRoad-Network) | Mesh and distributed networking |
+| [BlackRoad Education](https://github.com/BlackRoad-Education) | Learning and tutoring platforms |
+| [BlackRoad Labs](https://github.com/BlackRoad-Labs) | Research and experiments |
+| [BlackRoad Cloud](https://github.com/BlackRoad-Cloud) | Self-hosted cloud infrastructure |
+| [BlackRoad Forge](https://github.com/BlackRoad-Forge) | Developer tools and utilities |
 
-- `.txt`
-- `.md`
-- `.road`
-
-## Keybindings
-
-- `Ctrl+S`: Save
-- `Ctrl+Q` or `Ctrl+C`: Quit
-- `Shift+Tab`: Cycle accept-edits mode
-- `Backspace`: Edit active input line
-- `Enter`: Submit active input line to buffer
-- `Arrow keys` / `Home` / `End`: Navigate in buffer
-
-## Run
-
-```bash
-roadpad
-roadpad notes.road
-roadpad README.md
-```
-
-## Default Surface Setup
-
-```bash
-bash ~/roadpad/install-default-surface.sh
-source ~/.zshrc
-```
-
-This config exports `BLACKROAD_DEFAULT_SURFACE=roadpad`, sets `EDITOR`/`VISUAL`, and installs `roadpad` + `blackroad-surface` launchers in `~/.local/bin`.
-
-## Architecture
-
-```text
-~/roadpad/
-├── roadpad.py                  # Main input loop
-├── renderer.py                 # Deterministic terminal rendering
-├── buffer.py                   # Plain-text source of truth
-├── config.py                   # Optional local config helpers
-├── roadpad                     # Shell launcher
-├── roadpad.env                 # Default-surface environment flags
-└── install-default-surface.sh  # Default-launch wiring helper
-```
+### Links
+- **Website**: [blackroad.io](https://blackroad.io)
+- **Documentation**: [docs.blackroad.io](https://docs.blackroad.io)
+- **Chat**: [chat.blackroad.io](https://chat.blackroad.io)
+- **Search**: [search.blackroad.io](https://search.blackroad.io)
 
 ---
 
-**Proprietary Software — BlackRoad OS, Inc.**
 
-This software is proprietary to BlackRoad OS, Inc. Source code is publicly visible for transparency and collaboration. Commercial use, forking, and redistribution are prohibited without written authorization.
-
-**BlackRoad OS — Pave Tomorrow.**
-
-*Copyright 2024-2026 BlackRoad OS, Inc. All Rights Reserved.*
